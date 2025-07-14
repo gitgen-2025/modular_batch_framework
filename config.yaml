@@ -1,0 +1,18 @@
+app:
+  name: yourdata-app
+  version: 1.0.0
+
+database:
+  host: yourdata-host
+  port: 5432
+  name: yourdata-db
+  user: yourdata-user
+  password: yourdata-password
+
+batch:
+  job_name: yourdata-job
+  retries: 2
+  timeout_seconds: 30
+
+logging:
+  level: INFO
