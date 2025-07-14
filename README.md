@@ -1,2 +1,15 @@
-# modular_batch_framework
-A lightweight, modular Python framework for building and running batch jobs locally, in Docker, or in the cloud.
+yourdata-batch-app/
+├── yourdata/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── logger.py
+│   ├── db.py
+│   ├── tasks.py
+│   ├── batch_runner.py
+│   ├── main.py
+│   └── lambda_function.py
+├── config.yaml
+├── requirements.txt
+├── Dockerfile
+├── .dockerignore
+├── README.md
