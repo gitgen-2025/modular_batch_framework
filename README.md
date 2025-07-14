@@ -1,5 +1,4 @@
-yourdata-batch-app/
-├── yourdata/
+├──modular_batch_framework  /
 │   ├── __init__.py
 │   ├── config.py
 │   ├── logger.py
@@ -14,12 +13,6 @@ yourdata-batch-app/
 ├── .dockerignore
 ├── README.md
 
-# yourdata Batch Processing App
-
-A modular Python application for batch jobs. Designed for local execution or serverless deployment via AWS Lambda.
-
----
-
 ## 🧩 Structure
 
 - `yourdata/` — all core logic
@@ -27,11 +20,33 @@ A modular Python application for batch jobs. Designed for local execution or ser
 - `lambda_function.py` — entry point for AWS Lambda
 - `main.py` — CLI/local execution entry point
 
+-
+# YourData Batch Processing Module
+
+> ⚠️ **IMPORTANT:** This is a neutral boilerplate project. All references to `yourdata` should be replaced with your company's or application's actual namespace before production use.
+
 ---
 
-## 🚀 Usage
+## 🚀 Overview
 
-### Local
+This repository provides a modular, configurable Python batch processing system designed for:
 
-```bash
-python yourdata/main.py
+- Local script execution (`main.py`)
+- Cloud execution (e.g., AWS Lambda via `lambda_function.py`)
+- Easy extension via OOP-based batch tasks
+- Scalable integration with databases and CI/CD pipelines 
+
+---
+
+## 📝 Rename Instructions
+
+Before deploying or extending:
+
+- Replace all `yourdata` import paths and folder names with your organization or app-specific name.
+
+### 🔁 Example
+
+**From:**
+```python
+from yourdata.logger import get_logger
+
